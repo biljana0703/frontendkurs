@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        html{
+	        margin:0;
+	        padding:0;
+            overflow: hidden;
+            font-family: arial,sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li{
+            display: inline;
+            float:right;
+            font-family: arial,sans-serif;
+            font-size: 13px;
+            padding: 8px 6px;
+        }
+
+        li a:link{
+            display: block;
+            text-align: center;
+            padding: 8px 6px;
+            text-decoration: none;
+            color: #222;
+        }
+
+        li a:hover:not(.button) {
+            display: block;
+            text-decoration: underline;
+        }
+
+        li a.button{
+            background-color: #4387fd;
+            color: white;
+            border-radius: 2px;
+            text-decoration: none;
+            cursor: default;
+        }
+
+        .sredina{
+/*            position: relative;*/
+/*            width: 100vw;*/
+            margin: auto;
+            padding-top: 150px;
+        }
+
+        .google{
+/*            position: absolute;
+              left: 40%;
+*//*          top: 150px;*/
+/*            margin: auto;*/
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .input-container{
+/*             position: absolute;*/
+            width: 560px;
+            border: 1px solid lightgray;
+
+/*            left: 30%;*/
+/*            top: 250px;*/
+            border-radius: 25px;
+            margin: auto;
+        }
+
+        .input-field {
+/*          width: 90%;*/
+          width: calc(100% - 80px);
+          padding: 10px 20px;
+          border: 0px solid;
+        }
+
+        .input-field:focus{
+            outline: none;
+
+        }
+
+        .btnSearch{
+/*            position: absolute;*/
+            width: 300px;
+/*            left: 40%;*/
+/*            top: 350px;*/
+            margin: auto;
+            margin-top: 45px;
+            padding-bottom: 11px;
+            padding-top: 11px;
+/*            margin-bottom:11px;*/
+        }
+
+        .btn{
+            font-family: arial,sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+            background-color: #f2f2f2;
+            border-radius: 4px;
+            margin: 11px 4px;
+            padding: 11px 16px;
+            color: #5F6368;
+
+        }
+
+        a.btn:hover{
+            border: 1px solid #e1dfdf;
+        }
+
+        .jezik{
+            margin-top: 15px;
+            text-align: center;
+            font-size: small;
+        }
+
+        a.srb:link{
+            padding: 8px 6px;
+            text-decoration: none;
+        }
+
+        a.srb:hover{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+
+  <ul>
+    <li><a class="button" href="https://accounts.google.com/signin/v2/identifier?hl=sr&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Prijavite se</a></li>
+    <li><a class="aplikacija" href=""><i class="fa fa-th fa-lg" aria-hidden="true"></i></a></li>
+    <li><a class="slike" href="https://https://www.google.rs/imghp?hl=en&tab=wi&ogbl">Slike</a></li>
+    <li><a class="gmail" href="https://www.google.com/gmail/about/#">Gmail</a></li>
+  </ul>
+
+  <div class="sredina" >
+     <div class="google">
+          <img src="google.png">
+
+     </div>
+     <div class="input-container">
+                <i class="fa fa-search" style="color: gray; padding: 13px 10px" ></i>
+                <input class="input-field" type="search" value="Awesome Icons">
+                <i class="fa fa-microphone" style="color: darkcyan; padding: 13px 10px"></i>
+     </div>
+     <div class="btnSearch">
+        <a class="btn" href="https://fontawesome.com/icons?from=io">Google Search</a>
+        <a class="btn" href="https://www.google.com/doodles/">I'm Feeling Lucky</a>
+     </div>
+     <div class="jezik">
+         Google offered in:
+        <a class="srb" href="https://www.google.com/setprefs?sig=0_F25vx14vX06GNxps9eFWFHhQArA%3D&hl=sr&source=homepage&sa=X&ved=0ahUKEwizw4S-2-vlAhXSzoUKHVERBt0Q2ZgBCA4">српски</a>
+        <a class="srb" href="https://www.google.com/setprefs?sig=0_F25vx14vX06GNxps9eFWFHhQArA%3D&hl=sr-Latn&source=homepage&sa=X&ved=0ahUKEwizw4S-2-vlAhXSzoUKHVERBt0Q2ZgBCA8">srpski</a>
+     </div>
+
+  </div>
+
+</body>
+</html>
