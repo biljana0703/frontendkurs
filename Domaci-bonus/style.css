@@ -1,0 +1,116 @@
+body{
+    background-image: url(images/bkg.jpg);
+    margin: 0;
+    background-repeat: repeat-y;
+}
+.container{
+    background-color: black;
+    width: 75%;
+/*    height: 100vh;*/
+    margin: 0 auto;
+    font-family:Arial, sans-serif;
+}
+h1{
+    color: orange;
+    text-align: left;
+    padding-left: 50px;
+
+
+}
+.fa-phone{
+    color: white;
+    margin-right: 10px;
+}
+.fa-envelope-o{
+    color: white;
+    margin-right: 10px;
+}
+.zagl-desno{
+    float: right;
+    padding-top: 30px;
+    padding-right: 55px;
+}
+.zagl-desno ul{
+    list-style-type: none;
+    color: white;
+}
+.zaglavlje-slika{
+    text-align: center;
+}
+.zaglavlje{
+    padding-top: 20px;
+}
+.zaglavlje-slika ul{
+    list-style-type: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+            /*ovo se dodaje da bi se sprecilo da elementi idu van liste*/
+    background-color: #333;
+    width: 890px;
+    margin-left:  60.875px;
+
+}
+.zaglavlje-slika li{
+            padding-left: 20px;
+            display: inline;
+            float:left;
+
+
+
+        }
+.zaglavlje-slika li.kontakt{
+    float: right;
+    padding-right: 10px;
+}
+.vozila{
+    width: 70%;
+    padding: 0;
+
+}
+table, th, td{
+    border: 1px solid orange;
+
+}
+table{
+/*    width: 75%;*/
+    color: white;
+    border-collapse: collapse;
+    margin-left: 60.875px;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+td{
+    height: 20px;
+}
+.ponuda_usluge{
+        width: calc(70% - 60.875px);
+        color: white;
+        padding: 0;
+        border: 1px solid orange;
+        margin-left: 60.875px;
+
+
+}
+.novosti{
+        width: calc(70% - 60.875px);
+        color: white;
+        padding: 0;
+        border: 1px solid orange;
+        margin-left: 60.875px;
+        text-align: center;
+        padding-bottom: 10px;
+
+}
+.sponzor{
+        width: calc(70% - 60.875px);
+        color: white;
+        padding: 0;
+/*        border: 1px solid orange;*/
+        margin-left: 60.875px;
+        text-align: left;
+        padding-left: 30px;
+
+}
+
