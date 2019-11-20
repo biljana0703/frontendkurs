@@ -6,11 +6,12 @@ body{
 }
 .container{
     background-color: black;
-    width: 75%;
+    width: 65%;
 /*    height: 100vh;*/
     margin: 0 auto;
     font-family:"Arial", "Helvetica" sans-serif;
     line-height: 25px;
+    text-align: center;
 }
 h1{
     color: orange;
@@ -29,22 +30,23 @@ h1{
 }
 .zagl-desno{
     float: right;
-/*    padding-top: 30px;*/
-    padding-right: 55px;
+/*    padding-top: 30px;
+      padding-right: 60px;*/
 }
 .zagl-desno ul{
     list-style-type: none;
     color: white;
 }
 .zaglavlje-slika{
-    width: 90%;
+    width: 95%;
     height: auto;
     text-align: center;
     display: block;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 .zaglavlje{
     padding-top: 20px;
+    width: 95%;
 }
 .zaglavlje-slika ul{
     list-style-type: none;
