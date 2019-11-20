@@ -1,7 +1,8 @@
 body{
     background-image: url(images/bkg.jpg);
     margin: 0;
-    background-repeat: repeat-y;
+    /*background-repeat: repeat-y;*/
+    background-attachment: fixed;
 }
 .container{
     background-color: black;
@@ -36,8 +37,11 @@ h1{
     color: white;
 }
 .zaglavlje-slika{
+    width: 90%;
+    height: auto;
     text-align: center;
     display: block;
+    margin-left: 50px;
 }
 .zaglavlje{
     padding-top: 20px;
@@ -50,8 +54,8 @@ h1{
     overflow: hidden;
             /*ovo se dodaje da bi se sprecilo da elementi idu van liste*/
     background-color: #333;
-    width: 890px;
-    margin-left:  60.875px;
+    width: 100%;
+    
 
 }
 .zaglavlje-slika li{
@@ -76,19 +80,20 @@ table{
 /*    width: 75%;*/
     color: white;
     border-collapse: collapse;
-    margin-left: 60.875px;
+    margin-left: 65px;
     margin-top: 20px;
     font-size: 1.1em;
 }
 td{
     height: 20px;
+    padding-left: 10px;
 }
 .ponuda_usluge{
         width: calc(70% - 60.875px);
         color: white;
         padding: 0;
         border: 1px solid orange;
-        margin-left: 60.875px;
+        margin-left: 65px;
 
 
 }
@@ -97,7 +102,7 @@ td{
         color: white;
         padding: 0;
         border: 1px solid orange;
-        margin-left: 60.875px;
+        margin-left: 65px;
         text-align: center;
         padding-bottom: 10px;
 
