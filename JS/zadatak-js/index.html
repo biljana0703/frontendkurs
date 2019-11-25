@@ -17,13 +17,14 @@
     }
     
     function obrisiVrednosti(){
-        var ime= document.getElementById("ime");
+        /*var ime= document.getElementById("ime");
         var prezime= document.getElementById("prezime");
         ime.value="";
-        prezime.value="";
-        /*for (i=0; i<6, i++){
-              document.getElementsByClassName("unos")[i].value="";
-        }*/    
+        prezime.value="";*/
+        var a = document.getElementsByClassName("unos")/*OVDE UCITAMO SVE U NIZ!!!*/
+        for (i=0; i<a.length; i++){
+              a[i].value="";
+        }    
     }
     
     function obojiBodi(){
@@ -58,26 +59,25 @@
      <input type="button" value="Pošalji" onclick="proveriUnos()">
      <input type="button" value="Štampaj" onclick="stampaj()">
      <input type="button" value="Kontakt podaci">
-     <input type="button" value="Oboj bodi" onclick="obojiBodi()">
+     <input type="button" value="Oboj body" onclick="obojiBodi()">
   </form>
   
   <script>
-      var danas = new Date();
+      var seconds = new Date().getTime() / 1000;
+      /*var danas = new Date();
+      
         var sati = danas.getHours();
         var minuti = danas.getMinutes();
         var sekunde = danas.getSeconds();
         var vreme = sati + ":" + minuti + ":" + sekunde;
-        console.log(vreme); 
-        document.getElementById("tacnoVreme").innerHTML = " " + vreme;
+        console.log(vreme); */
+        document.getElementById("tacnoVreme").innerHTML = " " + seconds;
       
       function stampaj(){
-          
-          for (var i=0; i<6;){
-              if (typeof document.getElementsByClassName("unos")[i] != 'undefined'){
-                var a = document.getElementsByClassName("unos")[i].value; 
-                console.log(a);
-                i++
-              }
+          var a =document.getElementsByClassName("unos")
+          for (var i=0; i<a.length; i++){
+                console.log(a[i].value);
+              
           }       
       }
     
