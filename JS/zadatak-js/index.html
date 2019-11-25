@@ -11,6 +11,9 @@
             alert("Niste uneli vrednost");
             ime.style.backgroundColor="red";
         }
+        else{
+            alert("Uneli ste vrednost");
+        }
     }
     
     function obrisiVrednosti(){
@@ -18,6 +21,9 @@
         var prezime= document.getElementById("prezime");
         ime.value="";
         prezime.value="";
+        /*for (i=0; i<6, i++){
+              document.getElementsByClassName("unos")[i].value="";
+        }*/    
     }
     
     function obojiBodi(){
@@ -29,28 +35,28 @@
 
 </head>
 <body id="bodi">
-<h1>Praktican deo JavaScript  <span id="tacnoVreme">&nbsp;   </span></h1>
+<h1>Praktican deo JavaScript &nbsp;  <span id="tacnoVreme">&nbsp;   </span></h1>
 
 <h3>Unesite podatke za rezervaciju</h3>
   <form>
      <label for="ime">Ime</label>
-     <input id="ime" name="ime"> <br><br>
+     <input class="unos" id="ime" name="ime"> <br><br>
       
      <label for="prezime">Prezime</label>
-     <input id="prezime" name="prezime"><br><br>
+     <input class="unos" id="prezime" name="prezime"><br><br>
      
      <label for="adresa">Adresa</label>
-     <input id="adresa" name="adresa"><br><br>
+     <input class="unos" id="adresa" name="adresa"><br><br>
       
      <label for="telefon">Telefon</label>
-     <input id="telefon" name="telefon"><br><br>
+     <input class="unos" id="telefon" name="telefon"><br><br>
       
      <label for="rezervacija">Rezervacija</label><br><br>
-     <textarea id="rezervacija" name="rezervacija" cols="50" rows="7"></textarea><br><br>
+     <textarea class="unos" id="rezervacija" name="rezervacija" cols="50" rows="7"></textarea><br><br>
       
      <input type="button" value="Obrisi" onclick="obrisiVrednosti()">
      <input type="button" value="Pošalji" onclick="proveriUnos()">
-     <input type="button" value="Štampaj">
+     <input type="button" value="Štampaj" onclick="stampaj()">
      <input type="button" value="Kontakt podaci">
      <input type="button" value="Oboj bodi" onclick="obojiBodi()">
   </form>
@@ -62,7 +68,18 @@
         var sekunde = danas.getSeconds();
         var vreme = sati + ":" + minuti + ":" + sekunde;
         console.log(vreme); 
-        document.getElementById("tacnoVreme").innerHTML = "" + vreme;
+        document.getElementById("tacnoVreme").innerHTML = " " + vreme;
+      
+      function stampaj(){
+          
+          for (var i=0; i<6;){
+              if (typeof document.getElementsByClassName("unos")[i] != 'undefined'){
+                var a = document.getElementsByClassName("unos")[i].value; 
+                console.log(a);
+                i++
+              }
+          }       
+      }
     
   </script>
 </body>
