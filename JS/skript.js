@@ -4,15 +4,18 @@ function racunaj(a, b) {
     return rezultat;   
 }
 var rezultatFunkcije = racunaj(4, 6);
-   console.log("Rezultat je " + rezultatFunkcije);
+console.log("Rezultat je " + rezultatFunkcije);
+
 var prozor;
+
+function otvori() {
+    prozor = window.open("zadatak-js/reklama.html", "_blank", "width=320, height= 250");
+    setTimeout('zatvori()', 6000);
+}
+
 function zatvori() {
     prozor.close();
 }
 
-function otvori() {
-    window.open("zadatak-js/reklama.html", "_blank", "width=320, height= 250");
-}
 
-setTimeout('zatvori()', 6000);
 

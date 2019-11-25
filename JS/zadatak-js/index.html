@@ -5,49 +5,65 @@
 <title>Praktican deo</title>
 <script>
     
-//    4 zadatak
-    
-    var prozor;
-    
-    function otvori(){
-    prozor = window.open('reklama.html', '_blank', 'width=320,height=250');
+    function proveriUnos(){
+        var ime= document.getElementById("ime");
+        if(ime.value==""){
+            alert("Niste uneli vrednost");
+            ime.style.backgroundColor="red";
+        }
     }
     
-    function zatvori(){
-        prozor.close();
+    function obrisiVrednosti(){
+        var ime= document.getElementById("ime");
+        var prezime= document.getElementById("prezime");
+        ime.value="";
+        prezime.value="";
     }
     
-    
-    
+    function obojiBodi(){
+        document.getElementById("bodi").style.backgroundColor= "lightblue";
+    }
     
     </script>
 
 
 </head>
-<body>
-<h1>Praktican deo JavaScript</h1>
+<body id="bodi">
+<h1>Praktican deo JavaScript  <span id="tacnoVreme">&nbsp;   </span></h1>
 
 <h3>Unesite podatke za rezervaciju</h3>
   <form>
      <label for="ime">Ime</label>
-     <input id="ime" name="ime"> <br>
+     <input id="ime" name="ime"> <br><br>
       
      <label for="prezime">Prezime</label>
-     <input id="prezime" name="prezime"><br>
+     <input id="prezime" name="prezime"><br><br>
      
      <label for="adresa">Adresa</label>
-     <input id="adresa" name="adresa"><br>
+     <input id="adresa" name="adresa"><br><br>
       
      <label for="telefon">Telefon</label>
-     <input id="telefon" name="telefon"><br>
+     <input id="telefon" name="telefon"><br><br>
       
-     <label for="rezervacija">Rezervacija</label><br>
-     <textarea id="rezervacija" name="rezervacija" cols="50" rows="7"></textarea><br>
+     <label for="rezervacija">Rezervacija</label><br><br>
+     <textarea id="rezervacija" name="rezervacija" cols="50" rows="7"></textarea><br><br>
       
-     <input type="button" value="Obrisi">
-     <input type="button" value="Pošalji">
+     <input type="button" value="Obrisi" onclick="obrisiVrednosti()">
+     <input type="button" value="Pošalji" onclick="proveriUnos()">
      <input type="button" value="Štampaj">
      <input type="button" value="Kontakt podaci">
+     <input type="button" value="Oboj bodi" onclick="obojiBodi()">
   </form>
+  
+  <script>
+      var danas = new Date();
+        var sati = danas.getHours();
+        var minuti = danas.getMinutes();
+        var sekunde = danas.getSeconds();
+        var vreme = sati + ":" + minuti + ":" + sekunde;
+        console.log(vreme); 
+        document.getElementById("tacnoVreme").innerHTML = "" + vreme;
+    
+  </script>
 </body>
 </html>
