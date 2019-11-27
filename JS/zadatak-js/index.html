@@ -63,15 +63,15 @@
   </form>
   
   <script>
-      var seconds = new Date().getTime() / 1000;
-      /*var danas = new Date();
+      
+       var danas = new Date();
       
         var sati = danas.getHours();
         var minuti = danas.getMinutes();
         var sekunde = danas.getSeconds();
-        var vreme = sati + ":" + minuti + ":" + sekunde;
-        console.log(vreme); */
-        document.getElementById("tacnoVreme").innerHTML = " " + seconds;
+        var vreme = sati + ":" + minuti + ":" + setTimeout('document.getElementById("tacnoVreme").innerHTML =sekunde', 1000);
+        document.getElementById("tacnoVreme").innerHTML = vreme;
+        
       
       function stampaj(){
           var a =document.getElementsByClassName("unos")
