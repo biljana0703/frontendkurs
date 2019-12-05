@@ -1,0 +1,42 @@
+html{
+    margin: 0px;
+    padding: 0;
+}
+h1{
+    background-color: bisque;
+    font-size: 2em;
+    text-align: center;
+    font-family: cursive;
+}
+h2{
+    color: red;
+    background-color: azure;
+    font-style: italic;
+}
+body{
+    background-image: url(../images/background-10.jpg);
+}
+p{
+    font-size: 16px;
+    font-family: "Arial", Helvetica, sans-serif;
+}
+#contact{
+    color: red;
+    font: italic 14px arial, sans-serif;
+}
+#img1{
+    text-align: center;
+}
+.details{
+    background-color: darkgoldenrod;
+    margin: 0 20px 0 20px;
+}
+a:link{
+    text-decoration: none;
+    border: 1px solid darkblue;
+    padding: 3px;
+    display: inline; 
+}
+#link{
+    text-align: right;
+}
