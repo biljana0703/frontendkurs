@@ -35,7 +35,7 @@ a:link{
     text-decoration: none;
     border: 1px solid darkblue;
     padding: 3px;
-    display: inline; 
+    float: right;
 }
 #link{
     text-align: right;
