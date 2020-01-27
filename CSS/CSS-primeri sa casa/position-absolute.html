@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        div.relative {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid blue;
+        }
+
+        div.absolute {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            width: 200px;
+            height: 100px;
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>position: absolute;</h2>
+
+    <p>Element sa position: absolute; je pozicioniran relativno u odnosu na roditelja u kojem se nalazi
+        (umesto da je pozicioniran relativno na ceo prozor, kao fixed):</p>
+
+    <div class="relative">Ovaj div element ima position: relative;
+        <div class="absolute">Ovaj div element ima position: absolute;</div>
+    </div>
+
+</body>
+
+</html>

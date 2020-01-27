@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            /*da uklonimo tackice*/
+            margin: 0;
+            padding: 0;
+            /*da uklonimo default-nih margina i pedinga koje ima svaki browser*/
+            overflow: hidden;
+            /*ovo se dodaje da bi se sprecilo da elementi idu van liste*/
+            background-color: #333;
+        }
+
+        li {
+            display: inline;
+            float:right;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /*        svi oni koji nemaju tu klasu active da im se na prelazak misa ofarba pozadina u crnu boju*/
+
+     
+        .active {
+            background-color: #4CAF50;
+        }
+
+        li a:hover {
+            color: red;
+            background-color: aqua;
+        }
+    </style>
+    <title> Horizontalna navigacija</title>
+</head>
+
+<body>
+    <h1> Horizontal Navigation Bar</h1>
+    <ul>
+        <li><a class="active" href="home.html"> Pocetna</a></li>
+        <li><a href="news.html"> Novosti</a></li>
+        <li><a href="contact.html"> Kontakt</a></li>
+        <li><a href="about.html"> O nama </a></li>
+    </ul>
+</body>
+
+</html>

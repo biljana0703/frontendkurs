@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            /*da uklonimo tackice*/
+            margin: 0;
+            padding: 0;
+            /*da uklonimo default-nih margina i pedinga koje ima svaki browser*/
+            width:200px;/*block elementi zauzimaju citavu sirinu po default-u, ali kako mi zelimo da ogranicimo prostor koji ce zauzimati zadajemo sirinu 200px*/
+            background-color: #f1f1f1;
+            position:fixed;
+           
+        }
+        
+        li a{
+            display: block;  /*svaki li novi red*/
+          
+            background-color: #dddddd;/*pozadinska boja*/
+            text-decoration: none;
+            padding: 10px 0;
+            text-align: center;
+            
+            
+            
+        }
+        li a:hover{
+            
+            background-color: #555;
+            color:white;
+        }
+        
+    </style>
+    <title> Vertikalna navigacija</title>
+</head>
+
+<body>
+    <h1> Vertical Navigation Bar</h1>
+    <ul>
+        <li><a href="home.html"> Pocetna</a></li>
+        <li><a href="news.html"> Novosti</a></li>
+        <li><a href="contact.html"> Kontakt</a></li>
+        <li><a href="about.html"> O nama </a></li>
+    </ul>
+</body>
+
+</html>
