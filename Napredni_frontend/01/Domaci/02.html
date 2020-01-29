@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cas 1, Primer 2, nizovi</title>
+        
+</head>
+
+<body>
+    <h1> Primer sa nizom</h1>
+    
+    <p id="Car"></p>
+    
+    <script>
+    
+        var auto = ["Mercedes", "BMW", "Volvo", "Opel"];
+        alert(auto.length);
+
+        var lista = "<ol>";
+
+        for (var i = 0; i < auto.length; i++) {
+            
+            alert(auto[i]);
+
+            lista += "<li>" + auto[i] + "</li>";
+            //alert(auto[i]);
+
+
+        }
+        
+        lista = lista + "</ol>";
+        
+        alert(lista);
+        
+        document.getElementById("Car").innerHTML = lista;
+
+        
+    </script>
+      
+  
+</body>
+</html>

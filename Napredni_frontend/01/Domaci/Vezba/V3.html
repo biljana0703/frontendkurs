@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <p id = "car"></p>
+        
+        <script>
+            auto = ["M", "W", "A", "O"];
+            var lista = "<ol>";
+            
+            for ( var i = 0; i < auto.length; i++) {
+                lista += "<li>" + auto[i] + "</li>";
+            }
+            
+            lista += "</ol>";
+            
+            document.getElementById("car").innerHTML = lista;
+        
+        </script>
+    </body>
+</html>

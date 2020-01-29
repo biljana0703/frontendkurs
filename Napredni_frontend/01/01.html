@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head lang="sr">
+		<meta charset="utf-8">
+		<title>Primer za Switch</title>
+	</head>
+	<body>
+		
+		<h1>Cas 1, primer 1, switch</h1>
+		
+		<p id="dan"></p>
+		
+		
+		<script>
+			
+			alert(new Date().getDay());
+			
+			var dan;
+			
+			switch(new Date().getDay()) {
+				
+				case 0: 
+					dan = 'Nedelja';
+					break;
+				 
+				case 1:
+					dan = 'Ponedeljak';
+					break;
+				
+				case 2:
+					dan = 'Utorak';
+					break;
+				
+				case 3:
+					dan = 'Sreda';
+					break;
+				
+				case 4:
+					dan = 'Cetvrtak';
+					break;
+				
+				case 5:
+					dan = 'Petak';
+					break;
+				
+				case 6:
+					dan = 'Subota';
+					break;
+				
+			}
+			
+			alert(dan);
+			
+			document.getElementById('dan').innerHTML = 'Danas je <strong>' + dan + '</strong>!';
+			
+			
+			// ---------------------------------------
+			
+			
+			function vrednost() {
+				
+				var broj = prompt('Unesi vrednost, broj nula ili jedinica');
+				
+				//alert(broj);
+				
+				switch(broj) {
+				
+					case '0': 
+						//alert('Nula!');
+						//break;
+						
+					case '1':
+						//alert('Jedinica');
+						alert('Nula ili jedinica');
+						break;
+						
+					default:
+						alert('Neodgovarajuca vrednost!');
+						break;
+					
+				}
+				
+			}
+			
+			vrednost();
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</script>
+		
+		
+		
+		
+		
+	
+	</body>
+</html>

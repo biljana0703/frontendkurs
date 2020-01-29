@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       
+        <meta charset="UTF-8">
+        <title>Cas 1, Primer 1a, switch</title>
+        
+    </head>
+    
+    <body>
+       <h1>Cas 1, Primer 1</h1>
+
+       <p id="Prvi"></p>
+
+       <script>
+           var Dan;
+
+           switch(new Date().getDay()){
+                   case 0:
+                   Dan = "Nedelja";
+                   break;
+
+                   case 1:
+                   Dan = "Ponedeljak";
+                   break;
+
+                   case 2:
+                   Dan = "Utorak";
+                   break;
+
+                   case 3:
+                   Dan = "Sreda";
+                   break;
+
+                   case 4:
+                   Dan = "Četvrtak";
+                   break;
+
+                   case 5:
+                   Dan = "Petak";
+                   break;       
+
+           }
+           document.getElementById("Prvi").innerHTML = "Danas je " + Dan;
+
+       </script>
+
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+	<h1>Primer sa nizom</h1>
+	
+	<p id="automobil"></p>
+	
+	
+	<script>
+		
+		var automobili = ['Mercedes', 'BMW', 'Audi', 'Yugo', 'Dacia', 'Opel', 'FIAT'];
+		
+		alert(automobili[3]);	// cetvrti element niza
+		
+		console.log(automobili.length);	// duzina niza
+		
+		var lista = '<ol>';
+		
+		for (var i = 0; i < automobili.length; i++) {
+			
+			//alert(automobili[i]);
+			
+			
+			lista += '<li>' + automobili[i] + '</li>';
+			
+		}
+		
+		lista = lista + '</ol>';
+		
+		document.getElementById('automobil').innerHTML = lista;
+		
+		
+	</script>
+
+
+
+</body>
+</html>
