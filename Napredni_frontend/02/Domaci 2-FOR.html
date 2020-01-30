@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cas 2</title>
+</head>
+
+<body>
+   
+   <div id="Piramida"></div>
+   
+   <script>
+       var i = 1;
+       var j = 1;
+       var tekst = " ";
+       while (i < 6) {
+           
+           while(j<=i) {
+               
+               tekst += j;
+               j++;
+               
+           }
+           console.log(tekst);
+           tekst += " ";
+           i++;
+           
+       }
+       
+       document.getElementById("Piramida").innerHTML = tekst;
+    
+    
+   </script>
+    
+</body>
+</html>
