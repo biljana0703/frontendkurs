@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Obrada gresaka (izuzetaka)</title>
+</head>
+<body>
+<h1>Obrada gresaka (izuzetaka)</h1>
+
+
+<script>
+
+function primer1() {
+	
+	try {
+	
+		alert('prvi deo funkcije');
+		var a = 2 + 3;
+		alert('Sabrani broj je ' + a);
+		alert('Ok, izlazim iz \'try\' "bloka"');
+		
+	} catch(greska) {
+	
+		alert('Doslo je do greske');
+		
+	}
+	
+	alert('Zavrsili smo sa funkcijom 1');
+		
+}
+
+
+
+function primer2() {
+	
+	try {
+		
+		alert('ok, sada krece funkcija 2');
+		lalala();
+		var a = 2 + 3;
+		alert('nas napredni zbir je ' + a);
+		alert('ok, sada izlazim iz try...');
+		
+	} catch(greska) {
+		
+		alert('doslo je do greske u try... proveri sta tamo pise');
+		alert('Naziv greske: ' + greska.name);
+		alert('Opis greske: ' + greska.message);
+		
+	} finally {
+		
+		alert('Sada smo u \'finally\', i on se uvek izvrsava');
+		
+	}
+	
+	alert('Oks, zavrsili smo sa funkcijom 2');
+	
+	
+}
+
+
+
+function primer3() {
+	
+	
+	
+}
+
+
+
+
+
+
+
+primer1();
+primer2();
+primer3();
+
+</script>
+
+</body>
+</html>

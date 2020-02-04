@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Nasumicno izabrani element niza</title>
+</head>
+<body>
+
+<script>
+	
+	function nasumicniElement() {
+		
+		var patike = ['Adidas', 'Nike', 'Reebok', 'Puma', 'Asics', 'Starke'];
+		
+		var izabrane = patike[Math.floor( Math.random() * patike.length )];
+		
+		var dan = 'Petak';
+		
+		var niz = [dan, izabrane];
+		
+		return niz;
+		
+		
+	}
+	
+	var rezultat = nasumicniElement();
+	console.log(rezultat[0]);
+	console.log(rezultat[1]);
+	
+
+</script>
+
+
+</body>
+</html>

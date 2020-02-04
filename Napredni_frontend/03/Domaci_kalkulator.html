@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator</title>
+        <meta charset="utf-8">
+    
+    </head>
+    
+    
+    <body>
+           
+        
+            
+            Unesite prvi broj: <input type= "text" name="prviBroj"><br><br>
+            Unesite drugi broj: <input type= "text" name="drugiBroj"><br><br>
+            
+            Izaberite operaciju: <select id="operacija">
+                                    <option value="sabiranje" selected>Sabiranje</option>
+                                    <option value="oduzimanje">Oduzimanje</option>
+                                    <option value="mnozenje">Mnozenje</option>
+                                    <option value="deljenje">Deljenje</option>
+                                  </select><br><br>
+            
+            
+            <input type= "button" name="izracunaj" value="Izračunaj" onclick="izracunaj()"><br><br>
+            Rezultat je: <input type="text" name="rezultat">
+        
+        
+        
+        <script>
+           function izracunaj() {
+               var a = document.getElementsByTagName("input")[0].value;
+               var b = document.getElementsByTagName("input")[1].value;
+               var c =0;
+              // var operacija = document.getElementById("operacija").value;
+               if (document.getElementById("operacija").value == "sabiranje") {
+                   
+                    c = parseFloat(a) + parseFloat(b);
+                    
+               }
+               if (document.getElementById("operacija").value == "oduzimanje") {
+                   
+                    c = parseFloat(a) - parseFloat(b);
+                    
+               }
+               if (document.getElementById("operacija").value == "mnozenje") {
+                   
+                    c = parseFloat(a) * parseFloat(b);
+                    
+               }
+               if (document.getElementById("operacija").value == "deljenje") {
+                   
+                    c = parseFloat(a) / parseFloat(b);
+                    
+               }
+               
+               
+               document.getElementsByTagName("input")[3].value = c;
+           }
+        
+        
+        </script>
+       
+    
+    </body>
+
+</html>

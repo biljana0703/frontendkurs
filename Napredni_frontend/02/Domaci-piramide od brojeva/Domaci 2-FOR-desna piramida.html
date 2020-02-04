@@ -10,24 +10,27 @@
    <div id="Piramida"></div>
    
    <script>
-       var i = 1;
-       var j = 1;
+       var i = 0;
+       var j = 0;
        var tekst = " ";
-       while (i < 6) {
-           
-           while(j<=i) {
+       for (i =1; i<6; i++) {
+           for (j=1; j<=i; j++) {
                
                tekst += j;
-               j++;
                
            }
+           
+           document.getElementById("Piramida").innerHTML[i] = tekst + "\n";
+          
+           
            console.log(tekst);
-           tekst += " ";
-           i++;
+           tekst = " ";
            
        }
        
-       document.getElementById("Piramida").innerHTML = tekst;
+           
+       
+       
     
     
    </script>

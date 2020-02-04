@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cas 2</title>
+</head>
+
+<body>
+   
+   
+   <script>
+      var i = 1;
+      var j = 1;
+      var tekst = "";
+      var spaces = "";
+       
+      for (i = 1; i < 6; i++) {       // petlja za brojanje redova piramide (1-5)
+           
+           for (j = 1; j<= i+(i-1); j++) {  // petlja za 2 1, 321, 4321, 54321
+           
+                tekst += "*";
+           }
+               
+           
+                    
+             var b = 5 -i;                 // brojac za spejsove
+             for( l = 1; l<= b; l++) {
+                        
+                spaces += " ";
+                           
+             }
+                    
+             tekst = spaces + tekst + spaces;
+              
+             document.write(tekst);
+             console.log(tekst);
+             tekst = "";
+             spaces = "";
+               
+           }
+           
+            
+       
+    
+    
+   </script>
+    
+</body>
+</html>

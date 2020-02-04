@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cas 2-Domaci 4</title>
+</head>
+
+<body>
+   
+   
+   <script>
+      var i = 1;
+      var j = 1;
+      var tekst = "";
+      var spaces = "";
+       
+      for (i = 1; i < 6; i++) {       // petlja za brojanje redova piramide (1-5)
+           
+           for (j = (6-i); j>= 1; j--) {  // petlja za 54321, 4321, 321, 21
+           
+                tekst += j;
+           }
+               
+           if(j< 1) {
+                
+             for (k= j+2; k <=(6-i); k++) {  // petlja za 2345, 234, 23, 2
+                  
+                    tekst += k;
+                 
+             }
+                    
+             var b = i-1;                 // brojac za spejsove
+             for( l = 1; l<= b; l++) {
+                        
+                spaces += " ";
+                           
+             }
+                    
+             tekst = spaces + tekst + spaces;
+                    
+             console.log(tekst);
+             tekst = "";
+             spaces = "";
+               
+           }
+           
+            
+       }
+    
+    
+   </script>
+    
+</body>
+</html>

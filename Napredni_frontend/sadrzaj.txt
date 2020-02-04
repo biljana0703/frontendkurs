@@ -2,5 +2,13 @@ Sadrzaj primera:
 
 1. /01/01.html - case petlja
 2. /01/02.html - primer sa nizom
+3. /02/01.html - consol.log(i++, i--, --i, ++i)
+3. /02/02.html - desna piramida brojeva
+3. /02/03.html - Dodavanje/brisanje... elemenata u niz (push, unshift, pop, shift, splice, concat)
+3. /03/01.html - Math-zaokruzivanje brojeva i random
+3. /03/02.html - Funkcija za random izbor elemenata niza
+3. /03/03.html - Return 2 podatka iz funkcije
+3. /03/04.html - Odredjivanje tipa - typeof
+3. /03/05.html - Obrada gresaka - Try-catch-
 
-
+Sadrzaj primera:

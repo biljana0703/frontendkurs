@@ -1,0 +1,91 @@
+<html>
+<head>
+</head>
+<body>
+
+<script>
+
+var automobili = ['BMW', 'Mercedes', 'Opel'];
+
+alert('1. ' + automobili);
+
+// dodavanje novog elementa na kraj niza
+automobili.push('Lada');
+alert('2. ' + automobili);
+
+
+// dodavanje novog elementa na pocetak niza
+automobili.unshift('Polonez');
+alert('3. ' + automobili);
+
+// brisemo poslednji element niza
+automobili.pop();
+alert('4. ' + automobili);
+
+// brisemo prvi element niza
+automobili.shift();
+alert('5. ' + automobili);
+
+/*
+splice 
+prvi parametar je gde dodajemo nove elemente
+drugi parametar je koliko cemo elemenata brisati
+svi naredni se dodaju u niz
+*/
+automobili.splice(2, 0, 'Trabant', 'FIAT');
+alert('6. ' + automobili);
+
+automobili.splice(0, 2);
+alert('7. ' + automobili);
+
+automobili.splice(0, automobili.length);
+alert('8. ' + automobili);
+
+
+alert('9. Povezivanje nizova');
+
+var niz1 = [1, 2, 3];
+var niz2 = [7, 8, 9];
+
+alert(niz1);
+alert(niz2);
+
+var povezaniNiz = niz1.concat(niz2);
+alert('10. Novi niz je: ' + povezaniNiz + ' i ima ' + povezaniNiz.length + ' elemenata');
+
+
+// razbijanje stringa u niz
+var pitanje = 'Kako nam se dopada JavaScript?';
+var noviNiz = pitanje.split(' ');
+alert('11. ' + noviNiz);
+
+for (var i = 0; i < noviNiz.length; i++) {
+
+	alert(noviNiz[i]);
+	
+}
+
+
+var j = 0;
+while (j < noviNiz.length) {
+	
+	alert(noviNiz[j]);
+	
+	j++;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
