@@ -1,0 +1,68 @@
+<html>
+<head>
+	
+	<title>Konvertor valuta</title>
+	
+	<style>
+		body, input {
+			font-family: verdana;
+		}
+		
+		input {
+			margin:5px;
+			
+		}
+		
+	</style>
+	
+	
+</head>
+<body>
+	
+	<input type="text" id="kurs" value="120">
+	<br>
+	<input type="text" id="euro" placeholder="&euro;" onkeyup="euroDinar()">
+	<br>
+	<input type="text" id="dinar" placeholder="dinari" onkeyup="dinarEvro()">
+	
+
+
+
+<script>
+
+	function euroDinar() {
+		
+		var kurs = parseFloat(document.getElementById('kurs').value);
+		var euro = parseFloat(document.getElementById('euro').value);
+		
+		var dinar = euro * kurs;
+		
+		if (!isNaN(dinar)) {
+			document.getElementById('dinar').value = dinar;
+		}
+		
+		
+	}
+	
+	
+	function dinarEvro() {
+		
+		var kurs = parseFloat(document.getElementById('kurs').value);
+		var dinar = parseFloat(document.getElementById('dinar').value);
+		
+		var euro = dinar / kurs;
+		
+		if (!isNaN(euro)) {
+			document.getElementById('euro').value = euro;
+		}
+		
+		
+		
+	}
+
+
+</script>
+
+
+</body>
+</html>

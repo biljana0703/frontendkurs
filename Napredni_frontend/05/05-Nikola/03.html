@@ -1,0 +1,44 @@
+<html>
+<body>
+
+<p>Klikni na dugme da bi dobio svoju lokaciju</p>
+
+<button onclick="ocitajLokaciju()">Aj probaj</button>
+
+<p id="rezultat"></p>
+
+<script>
+	
+	function ocitajLokaciju() {
+		
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(showPosition);
+		} else {
+			document.getElementById('rezultat').innerHTML = 
+			'Vas browser ne podrzava geolokacije';
+		}
+		
+		
+	}
+	
+	function showPosition(position) {
+		
+		//alert(position.coords.latitude);
+		//alert(position.coords.longitude);
+		
+		var latitude = position.coords.latitude;
+		var longitude = position.coords.longitude;
+		
+		document.getElementById('rezultat').innerHTML = 'Sirina: ' + latitude
+		+ '<br>' + 'Duzina: ' + longitude;
+		
+		
+	}
+	
+	
+
+
+</script>
+
+</body>
+</html>

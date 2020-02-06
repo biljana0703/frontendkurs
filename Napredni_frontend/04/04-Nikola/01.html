@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator</title>
+        <meta charset="utf-8">
+    
+    </head>
+    <body>
+	
+		<label for="prviBroj">Unesite prvi broj:</label>
+		<input type="number" name="prviBroj" id="prviBroj" placeholder="prvi broj"><br><br>
+		Unesite drugi broj: <input type="text" name="drugiBroj"><br><br>
+		Izaberite operaciju:<select>
+								<option value="sabiranje" selected>Sabiranje</option>
+								<option value="oduzimanje">Oduzimanje</option>
+								<option value="mnozenje">Mnozenje</option>
+								<option value="deljenje">Deljenje</option>
+							</select>
+							
+							<br><br>
+           
+		<input type= "button" name="izracunaj" value="Izračunaj" onclick="izracunaj()"><br><br>
+		
+		Rezultat je: <input type="text" name="rezultat" readonly style="border:none">
+		
+		<script>
+			function izracunaj() {
+				
+				var a = document.getElementsByTagName("input")[0].value;
+				var b = document.getElementsByTagName("input")[1].value;
+				
+				var c = 0;
+				
+				
+				//var operacija = document.getElementById("operacija").value;
+				var operacija = document.getElementsByTagName("select")[0].value;
+				
+				var greska = false;
+				
+				if (isNaN(a) || isNaN(b)) {
+					greska = true;
+				}
+				
+				if (operacija != 'sabiranje' && operacija != 'oduzimanje' && operacija != 'mnozenje' && operacija != 'deljenje') {
+					greska = true;
+				}
+				
+				
+				if (greska == false) {
+				
+					if (operacija == "sabiranje") {
+					
+						c = parseFloat(a) + parseFloat(b);
+						
+					} else if (operacija == "oduzimanje") {
+						
+						c = parseFloat(a) - parseFloat(b);
+					
+					} else if (operacija == "mnozenje") {
+						
+						c = parseFloat(a) * parseFloat(b);
+						
+					} else  {
+					
+						c = parseFloat(a) / parseFloat(b);
+						
+					}
+				}
+				
+				
+			   
+			   
+			   if (isFinite(c)) {
+				document.getElementsByTagName("input")[3].value = c;
+			   } else {
+			   alert('greska');
+			   }
+               
+               
+           }
+        
+        
+        </script>
+       
+    
+    </body>
+
+</html>

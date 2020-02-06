@@ -1,0 +1,29 @@
+<html>
+<body>
+
+
+
+<button onclick="this.innerHTML=Date()" title="Znamo mi koliko je sati...">Klikni me da bi video koliko je sati!</button>
+
+
+<br><br><br>
+
+<button onmouseout="prikaziDatum()">Klikni me</button>
+<br>
+<p id="trenutniDatum"></p>
+
+<script>
+
+	function prikaziDatum() {
+		document.getElementById('trenutniDatum').innerHTML = Date();
+	}
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

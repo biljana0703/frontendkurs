@@ -60,6 +60,18 @@ function primer2() {
 
 function primer3() {
 	
+	try {
+		if (confirm('Potvrdi ako hoces da se desi greska')) {
+			alert('Ok, sace da se desi greskla');
+			trlala();
+		} else {
+			alert('Oks, nema greske :-(');
+		}
+	
+	} catch (greska) {
+		alert('Ok prijatelju, sam si to trazio...');
+		alert('Ja sam greska! Nikola je tu i gleda u moj monitor!');
+	}
 	
 	
 }
@@ -67,11 +79,8 @@ function primer3() {
 
 
 
-
-
-
-primer1();
-primer2();
+//primer1();
+//primer2();
 primer3();
 
 </script>

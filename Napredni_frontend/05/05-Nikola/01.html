@@ -1,0 +1,65 @@
+<html>
+<head>
+</head>
+<body>
+<h1>Dvodimenzionalni nizovi</h1>
+
+
+<script>
+	
+	function primerNiza() {
+		
+		var aktivnosti = 
+			[
+				['Posao', 9], 
+				['Ishrana', 2], 
+				['Zabava', 2], 
+				['Rekreacija', 2], 
+				['Spavanje', 6], 
+				['Ostalo', 3]
+			];
+			
+		alert('Niz ima: ' + aktivnosti.length + ' elemenata');
+		
+		alert(aktivnosti[3]);
+		alert(aktivnosti[3][0]);
+		alert(aktivnosti[3][1]);
+		
+		
+		
+		for (var i = 0; i < aktivnosti.length; i++) {
+			
+			alert(aktivnosti[i][0] + '; ' + aktivnosti[i][1]);
+		
+		}
+		
+		
+		for (i = 0; i < aktivnosti.length; i++) {
+			
+			var procenat = (aktivnosti[i][1] / 24) * 100;
+			
+			aktivnosti[i][0] = 'Aktivnost: ' + aktivnosti[i][0];
+			
+			aktivnosti[i][1] = ' ukupno ' + aktivnosti[i][1] + ' sati dnevno';
+			
+			aktivnosti[i][2] = procenat.toFixed(2) + '%';
+			
+		}
+		
+		console.log(aktivnosti.join('\n'));
+		
+			
+	
+	}
+
+	
+	primerNiza();
+
+
+
+
+</script>
+
+
+</body>
+</html>

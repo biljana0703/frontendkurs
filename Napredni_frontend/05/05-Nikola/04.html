@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+	#divCilj {
+		width: 350px;
+		height: 170px;
+		padding: 10px;
+		border: 1px solid #aaaaaa;
+	}
+</style>
+
+<script>
+function dozvoliPrebacivanje(ev) {
+  ev.preventDefault();
+}
+
+function prebacivanje(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function prihvati(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<p>Drag the W3Schools image into the rectangle:</p>
+
+<div id="divCilj" ondrop="prihvati(event)" ondragover="dozvoliPrebacivanje(event)"></div>
+<br>
+<img id="divPocetak" src="img_logo.gif" draggable="true" ondragstart="prebacivanje(event)" width="336" height="69">
+
+<br>
+<span id="divPocetak1" draggable="true" ondragstart="prebacivanje(event)" style="cursor:move">Novi Sad</span>
+
+
+
+</body>
+</html>
