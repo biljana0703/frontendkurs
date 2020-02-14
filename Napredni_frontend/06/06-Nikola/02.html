@@ -1,0 +1,46 @@
+<html>
+<head>
+
+<script src="../../js/jquery-3.4.1.min.js"></script>
+
+<script>
+
+jQuery(document).ready(function() {
+	
+	jQuery('.zajedno').on('click', function() {
+		jQuery('.zajedno').show();
+	})
+	
+	jQuery('.prvi').on('click', function() {
+	
+		//jQuery('.prvi').hide();
+		jQuery(this).hide();
+		
+	})
+	
+	jQuery('.drugi').on('click', function() {
+		jQuery(this).hide();
+	})
+	
+	jQuery('.treci, .cetvrti').on('click', function() {
+		jQuery(this).hide();
+	})
+	
+})
+
+</script>
+
+
+
+</head>
+<body>
+
+<p class="prvi zajedno">Prvi paragraf</p>
+<label class="drugi zajedno">Ovo je labela</label>
+<p class="treci zajedno">Drugi paragraf, treci element</p>
+<span class="cetvrti zajedno">Ovo je sada span</span>
+<div class="peti zajedno">A sada malo div...</div>
+
+
+</body>
+</html>

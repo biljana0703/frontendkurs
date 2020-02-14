@@ -1,0 +1,60 @@
+<html>
+<head>
+
+<script src="../../js/jquery-3.4.1.min.js"></script>
+	
+<script>
+
+	jQuery(document).ready(function() {
+		
+		jQuery('#dugme').on('click', function(){
+			var ime = jQuery('#ime').val();
+			var email = jQuery('#email').val();
+			var sifra = jQuery('#sifra').val();
+			
+			var rezultat = 'Upisano ime: ' + ime + '\n';
+			rezultat += 'Upisan e-mail: ' + email + '\n';
+			rezultat += 'Upisana sifra: ' + sifra;
+			
+			alert(rezultat);
+			jQuery('#podaci').val(rezultat);
+		})
+		
+		jQuery('#dugme2').on('click', function() {
+			
+			jQuery('#prvi-div').text( jQuery('#podaci').val() );
+			jQuery('#drugi-div').html( jQuery('#podaci').val() );
+			
+		})
+		
+	})
+
+
+</script>
+	
+
+</head>
+<body>
+
+<input type="text" id="ime" placeholder="ime">
+<br>
+<input type="email" id="email" placeholder="e-mail">
+<br>
+<input type="password" id="sifra" placeholder="sifra">
+<br>
+<button id="dugme">Klikni me</button>
+<br>
+<button id="dugme2">Klikni me (2)</button>
+
+<hr>
+
+<textarea id="podaci"></textarea>
+<hr>
+<div id="prvi-div" style="border:1px red dashed;min-height:10px"></div>
+<br>
+<div id="drugi-div" style="border:1px blue dotted;min-height:10px"></div>
+
+
+
+</body>
+</html>

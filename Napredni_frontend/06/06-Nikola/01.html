@@ -1,0 +1,38 @@
+<html>
+<head>
+
+<script src="../../js/jquery-3.4.1.min.js"></script>
+
+<script>
+
+jQuery(document).ready(function() {
+	
+	jQuery('button').on('click',function() {
+		alert('kliknuo si na dugme');
+	})
+	
+	jQuery('#dugme2').on('click', function() {
+		
+		jQuery('.prvi-paragraf').toggle(500);
+		
+	})
+	
+})
+
+</script>
+
+</head>
+<body>
+
+<p class="prvi-paragraf">Ovo je paragraf</p>
+<label class="prvi-paragraf">Ovo je labela</label>
+<br>
+
+<button>Klikni me</button>
+<br>
+<button id="dugme2">Ovo je dugme 2</button>
+	
+	
+
+</body>
+</html>
