@@ -24,4 +24,7 @@ Sadrzaj primera:
 22. /07/02.html - jQuery UI Datepicker - Default functionality
 23. /07/03.html - jQuery UI Tabs - Default functionality
 24. /08/01.html - Kalkulator u jQuery - moderan button i dialog
-25. /08/02-domaci.html - Search i highlight texta
+25. /08/02-domaci.html - Search i highlight texta sa onKlik metodom
+26. /08/02-onInput.html - Search i highlight texta-sa onInput metodom
+27. /09/01.html - Nikola sredio nivo-slider
+28. /09/02.html - digitron sa JSON objectom i ajax-om

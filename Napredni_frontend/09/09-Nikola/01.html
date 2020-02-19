@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sr"> 
+<head>
+<meta charset="utf-8">
+<title>Nivo Slider</title>
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+<script type="text/javascript" src="./nivo-slider/jquery.nivo.slider.js"></script> 
+
+<link rel="stylesheet" href="./nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="./nivo-slider/themes/light/light.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="./nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="./nivo-slider/demo/style.css" type="text/css" media="screen" />
+
+<style>
+	
+#glavni {
+	width:80%;
+	margin:auto;
+}
+	
+</style>
+
+
+</head>
+<body>
+
+
+
+<div id="glavni">
+
+	<div id="slider" class="nivoSlider">
+		<img src="./nivo-slider/demo/images/toystory.jpg" data-thumb="./nivo-slider/demo/images/toystory.jpg" alt="" /><a href="http://dev7studios.com">
+		<img src="./nivo-slider/demo/images/up.jpg" data-thumb="demo/images/up.jpg" alt="" title="Ovo je moj drugi slajd" /></a>
+		<img src="./nivo-slider/demo/images/walle.jpg" data-thumb="demo/images/walle.jpg" alt="" />
+		<img src="./nivo-slider/demo/images/nemo.jpg" data-thumb="demo/images/nemo.jpg" alt="" title="#htmlcaption" /> 
+		
+		
+	</div>
+	
+
+</div>
+
+<div id="htmlcaption" class="nivo-html-caption">I ovo je moj <b>"slajd"</b></div>
+
+
+
+<script>
+
+jQuery(document).ready(function() {
+	jQuery('#slider').nivoSlider(
+	{
+		effect: 'fade'
+		
+	});
+})
+
+
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery UI Tabs - Default functionality</title>
+<link rel="stylesheet" href="../../js/jquery-ui.css">
+<link rel="stylesheet" href="../../js/style.css">
+<script src="../../js/jquery-3.4.1.min.js"></script>
+<script src="../../js/jquery-ui.js"></script>
+<script>
+	jQuery(document).ready(function() {
+	    jQuery( "#operacija" ).selectmenu();
+		jQuery( "button" ).button();
+		jQuery( "#dialog" ).dialog({
+			autoOpen: false, 
+			hide: {
+				effect: "explode",
+				duration: 200
+			}
+		})
+      
+		
+	})
+</script>
+
+</head>
+<body>
+
+
+<input type="text" id="prviBroj" placeholder="prvi broj">
+<br><br>
+<input type="text" id="drugiBroj" placeholder="drugi broj">
+<br><br>
+<select id="operacija">
+	<option value="sabiranje">Sabiranje</option>
+	<option value="oduzimanje">Oduzimanje</option>
+	<option value="mnozenje">Mnozenje</option>
+	<option value="deljenje">Deljenje</option>
+</select>
+<br><br>
+
+<button id="izracunaj">Izracunaj</button>
+
+
+
+<div id="dialog" title="Rezultat">
+
+  <div id="rezultat"></div>
+
+</div>
+
+
+<script>
+	
+	jQuery(document).ready(function() {
+		
+
+			
+		function izracunaj() {
+			
+			var myObject = new Object();
+			myObject.prviBroj = parseFloat(jQuery('#prviBroj').val());
+			myObject.drugiBroj = parseFloat(jQuery('#drugiBroj').val());
+			myObject.operacija = jQuery('#operacija').val();
+			
+			var data = JSON.stringify(myObject);
+			//alert(data);
+			
+			jQuery.ajax({
+				type:'post', 
+				url: '/09/server.php',
+					data: data,
+					datatype: 'json',
+					contentType: 'application/json; charset=utf-8',
+					cache: false,
+					success: function(r) {
+						
+						alert(r);
+						
+						jQuery( "#rezultat" ).html( r );
+						jQuery( "#dialog" ).dialog( "open" );
+						
+					}
+			});
+		}
+			
+
+		
+		
+		
+		
+		
+		jQuery('#izracunaj').on('click', function() {
+			izracunaj();
+		})
+			
+	
+	
+	})
+	
+	
+	
+
+</script>
+
+
+
+</body>
+</html>
